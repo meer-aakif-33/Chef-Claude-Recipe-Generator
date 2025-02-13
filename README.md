@@ -1,0 +1,2 @@
+# Chef Claude recipe generator
+ 
