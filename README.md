@@ -11,6 +11,11 @@ The **Recipe Generator** is a React-based web application that allows users to i
 - **Loading Indicator:** Displays a spinner while the recipe is being generated.
 - **Automatic Scrolling:** Scrolls to the generated recipe after fetching.
 
+## Preview
+![Image](https://github.com/user-attachments/assets/5ad8a974-9d06-4792-a43e-c40c2ed2beec)
+
+![Image](https://github.com/user-attachments/assets/0c710b07-7bf9-4494-a510-9e07e807d24a)
+
 ## Components
 ### `IngHeader`
 - Displays the app logo and title.
