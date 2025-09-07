@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import APIData from "../assets/data/recipeCode";
+import APIData from "../assets/data/RecipeCode.jsx"
 import IngredientList from "./IngredientList";
 import { getARecipeFromGemini } from "../assets/data/Ai.js";
 
