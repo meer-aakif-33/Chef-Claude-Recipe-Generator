@@ -18,7 +18,7 @@ const IngredientList = (props) => {
             </h2>
             <ul className="ingredient-list">{array}</ul>
           </div>
-          {props.numberOfIngredients > 3 && (
+          {props.numberOfIngredients > 2 && (
             <div className="get-recipe-container">
               <div className="get-recipe-container-left-part">
                 <h3>Ready for a recipe</h3>

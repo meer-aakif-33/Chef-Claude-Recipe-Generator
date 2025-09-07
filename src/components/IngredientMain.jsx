@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import APIData from "../assets/data/recipeCode";
 import IngredientList from "./IngredientList";
-import { getARecipeFromMistral } from "../assets/data/Ai.js";
+import { getARecipeFromGemini } from "../assets/data/Ai.js";
 
 const Main = () => {
-    const [ingredientList, setIngredientList] = useState(["Tea", "Coffee", "Water", "Sugar"]);
+    const [ingredientList, setIngredientList] = useState(["Coffee", "Water", "Sugar"]);
     const [recipe, setRecipe] = useState("");
     const [loading, setLoading] = useState(false); // New loading state
     const recipeRef = useRef(null); // Reference for the recipe section
@@ -36,7 +36,7 @@ const Main = () => {
         setLoading(true); // Show loading spinner
         setShowRecipe(false); // Hide previous recipe before generating a new one
 
-        const recipeGenerated = await getARecipeFromMistral(ingredientList);
+        const recipeGenerated = await getARecipeFromGemini(ingredientList);
         setRecipe(recipeGenerated);
         setLoading(false); // Hide loading spinner
 
